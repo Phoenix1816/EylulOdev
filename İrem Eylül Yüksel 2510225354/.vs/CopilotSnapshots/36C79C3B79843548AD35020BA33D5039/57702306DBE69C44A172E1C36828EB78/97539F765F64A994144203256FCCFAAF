@@ -1,0 +1,95 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class tek_çift : Form
+    {
+        private readonly List<int> sayilar = new List<int>();
+
+        // Designer kontrol alanları (ile doldurulmuşsa kullanılacak)
+        private TextBox textBox1;
+        private ListBox listBox1;
+        private ListBox listBox2;
+        private Button button1;
+        private Button button2;
+
+        public tek_çift()
+        {
+            InitializeComponent();
+            EnsureControls();
+        }
+
+        private void EnsureControls()
+        {
+            if (this.textBox1 != null && this.listBox1 != null && this.listBox2 != null && this.button1 != null && this.button2 != null)
+                return;
+
+            if (this.textBox1 == null)
+            {
+                textBox1 = new TextBox { Left = 10, Top = 10, Width = 120 };
+                this.Controls.Add(textBox1);
+            }
+
+            if (this.button1 == null)
+            {
+                button1 = new Button { Left = 140, Top = 8, Text = "Ekle" };
+                button1.Click += button1_Click;
+                this.Controls.Add(button1);
+            }
+
+            if (this.button2 == null)
+            {
+                button2 = new Button { Left = 210, Top = 8, Text = "Ayır" };
+                button2.Click += button2_Click;
+                this.Controls.Add(button2);
+            }
+
+            if (this.listBox1 == null)
+            {
+                listBox1 = new ListBox { Left = 10, Top = 50, Width = 200, Height = 300 };
+                this.Controls.Add(listBox1);
+            }
+
+            if (this.listBox2 == null)
+            {
+                listBox2 = new ListBox { Left = 220, Top = 50, Width = 200, Height = 300 };
+                this.Controls.Add(listBox2);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(textBox1.Text, out int sayi))
+            {
+                sayilar.Add(sayi);
+                textBox1.Clear();
+                textBox1.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Lütfen geçerli bir tam sayı giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+
+            foreach (int sayi in sayilar)
+            {
+                if (sayi % 2 == 0)
+                    listBox2.Items.Add(sayi);
+                else
+                    listBox1.Items.Add(sayi);
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            kuvvet_hesaplama kuvvet_Hesaplama = new kuvvet_hesaplama();
+            kuvvet_Hesaplama.Show();
+            this.Hide();
+        }
+
+        private void soru12_Click(object sender, EventArgs e)
+        {
+            asal_sayı asal_Sayı = new();
+            asal_Sayı.Show();
+            this.Hide();
+        }
+
+        private void soru21_Click(object sender, EventArgs e)
+        {
+            kilo_boy_ortalaması kilo_Boy_Ortalaması = new kilo_boy_ortalaması();
+            kilo_Boy_Ortalaması.Show();
+            this.Close();
+        }
+
+        private void soru25_Click(object sender, EventArgs e)
+        {
+            not_gösterici not_Gösterici = new not_gösterici();
+            not_Gösterici.Show();
+            this.Close();
+        }
+
+        private void soru10_Click(object sender, EventArgs e)
+        {
+            sesli_sessiz sesli_sessiz = new();
+            sesli_sessiz.Show();
+            this.Hide();
+        }
+
+        private void soru11_Click(object sender, EventArgs e)
+        {
+            üç_nokta_üçgen üç_Nokta_Üçgen = new();
+            üç_Nokta_Üçgen.Show();
+            this.Hide();
+        }
+
+        private void soru13_Click(object sender, EventArgs e)
+        {
+            çarpım_tablosu çarpım_Tablosu = new();
+            çarpım_Tablosu.Show();
+            this.Hide();
+        }
+
+        private void soru14_Click(object sender, EventArgs e)
+        {
+            faktöryel Faktöryel = new faktöryel();
+            Faktöryel.Show();
+            this.Hide();
+        }
+
+        private void soru16_Click(object sender, EventArgs e)
+        {
+            aradaki_asallar aradaki_Asallar = new aradaki_asallar();
+            aradaki_Asallar.Show();
+            this.Close();
+        }
+
+        private void soru17_Click(object sender, EventArgs e)
+        {
+            piramit piramit = new piramit();
+            piramit.Show();
+            this.Close();
+        }
+
+        private void soru18_Click(object sender, EventArgs e)
+        {
+            sayı_piramidi sayı_Piramidi = new sayı_piramidi();
+            sayı_Piramidi.Show();
+            this.Close();
+        }
+
+        private void soru20_Click(object sender, EventArgs e)
+        {
+            sayı_tahmini sayı_Tahmini = new sayı_tahmini();
+            sayı_Tahmini.Show();
+            this.Close();
+        }
+
+        private void soru22_Click(object sender, EventArgs e)
+        {
+            hesap_makinesi hesap_Makinesi = new hesap_makinesi();
+            hesap_Makinesi.Show();
+            this.Close();
+        }
+
+        private void soru23_Click(object sender, EventArgs e)
+        {
+            sayı_rakamları_toplamı sayı_Rakamları_Toplamı = new sayı_rakamları_toplamı();
+            sayı_Rakamları_Toplamı.Show();
+            this.Close();
+        }
+
+        private void soru24_Click(object sender, EventArgs e)
+        {
+            mükemmel_sayı mükemmel_Sayı = new mükemmel_sayı();
+            mükemmel_Sayı.Show();
+            this.Close();
+        }
+
+        private void soru28_Click(object sender, EventArgs e)
+        {
+            tek_çift tek_Çift = new tek_çift();
+            tek_Çift.Show();
+            this.Close();
+        }
+
+        private void soru26_Click(object sender, EventArgs e)
+        {
+            büyük_küçük_ortalama büyük_Küçük_Ortalama = new büyük_küçük_ortalama();
+            büyük_Küçük_Ortalama.Show();
+            this.Close();
+        }
+
+        private void soru27_Click(object sender, EventArgs e)
+        {
+            sıralama_büyükten_küçüğe sıralama_Büyükten_Küçüğe = new sıralama_büyükten_küçüğe();
+            sıralama_Büyükten_Küçüğe.Show();
+            this.Close();
+        }
+
+        private void soru29_Click(object sender, EventArgs e)
+        {
+            aranan_sayı aranan_Sayı = new aranan_sayı();
+            aranan_Sayı.Show();
+            this.Close();
+        }
+    }
+}

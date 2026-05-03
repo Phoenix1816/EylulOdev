@@ -1,0 +1,118 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class büyük_küçük_ortalama : Form
+    {
+        public büyük_küçük_ortalama()
+        {
+            InitializeComponent();
+        }
+
+        private void computeButton_Click(object sender, EventArgs e)
+        {
+            var text = inputTextBox.Text;
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                MessageBox.Show("Lütfen en az bir sayı girin.");
+                return;
+            }
+
+            var parts = text.Split(new[] { ',', ';', ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+            var list = new List<double>();
+            foreach (var p in parts)
+            {
+                if (double.TryParse(p, out var v))
+                    list.Add(v);
+                else
+                {
+                    MessageBox.Show($"Geçersiz sayı: {p}");
+                    return;
+                }
+            }
+
+            if (list.Count == 0)
+            {
+                MessageBox.Show("Geçerli sayı bulunamadı.");
+                return;
+            }
+
+            double min = double.MaxValue;
+            double max = double.MinValue;
+            double toplam = 0;
+            foreach (var v in list)
+            {
+                if (v < min) min = v;
+                if (v > max) max = v;
+                toplam += v;
+            }
+
+            double ort = toplam / list.Count;
+            double kareToplam = 0;
+            foreach (var v in list)
+                kareToplam += (v - ort) * (v - ort);
+            double std = Math.Sqrt(kareToplam / list.Count);
+
+            resultLabel.Text = $"Adet: {list.Count}\nEn Küçük: {min}\nEn Büyük: {max}\nOrtalama: {ort:F4}\nStandart Sapma: {std:F4}";
+        }
+
+        class Program
+        {
+            static void Masin()
+            {
+                Console.Write("Kaç adet sayı gireceksiniz: ");
+                int n = Convert.ToInt32(Console.ReadLine());
+
+                double[] sayilar = new double[n];
+
+                double toplam = 0;
+
+                for (int i = 0; i < n; i++)
+                {
+                    Console.Write((i + 1) + ". sayıyı giriniz: ");
+                    sayilar[i] = Convert.ToDouble(Console.ReadLine());
+                    toplam += sayilar[i];
+                }
+
+                // Ortalama
+                double ortalama = toplam / n;
+
+                // En küçük ve en büyük
+                double min = sayilar[0];
+                double max = sayilar[0];
+
+                for (int i = 1; i < n; i++)
+                {
+                    if (sayilar[i] < min)
+                        min = sayilar[i];
+
+                    if (sayilar[i] > max)
+                        max = sayilar[i];
+                }
+
+                // Standart sapma
+                double kareToplam = 0;
+
+                for (int i = 0; i < n; i++)
+                {
+                    kareToplam += Math.Pow(sayilar[i] - ortalama, 2);
+                }
+
+                double standartSapma = Math.Sqrt(kareToplam / n);
+
+                // Sonuçlar
+                Console.WriteLine("\n--- SONUÇLAR ---");
+                Console.WriteLine("En Küçük: " + min);
+                Console.WriteLine("En Büyük: " + max);
+                Console.WriteLine("Ortalama: " + ortalama);
+                Console.WriteLine("Standart Sapma: " + standartSapma);
+            }
+        }
+    }
+}

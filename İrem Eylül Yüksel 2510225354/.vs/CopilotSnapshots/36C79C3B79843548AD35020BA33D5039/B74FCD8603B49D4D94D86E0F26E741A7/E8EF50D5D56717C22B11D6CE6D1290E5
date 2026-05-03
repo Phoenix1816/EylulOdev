@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class sayı_toplama : Form
+    {
+        public sayı_toplama()
+        {
+            InitializeComponent();
+        }
+            class Program
+        {
+            static void clas()
+            {
+                int toplam = 0;
+
+                while (true)
+                {
+                    Console.WriteLine("Bir sayı girin (çıkmak için ESC):");
+
+                    ConsoleKeyInfo key = Console.ReadKey(true);
+
+                    // ESC kontrolü
+                    if (key.Key == ConsoleKey.Escape)
+                    {
+                        break;
+                    }
+
+                    // sayı girişi
+                    Console.Write(key.KeyChar); // ekrana yaz
+                    string kalan = Console.ReadLine();
+
+                    int sayi = Convert.ToInt32(key.KeyChar + kalan);
+
+                    toplam += sayi;
+                }
+
+                Console.WriteLine("Toplam: " + toplam);
+            }
+        }
+
+    }
+}
+

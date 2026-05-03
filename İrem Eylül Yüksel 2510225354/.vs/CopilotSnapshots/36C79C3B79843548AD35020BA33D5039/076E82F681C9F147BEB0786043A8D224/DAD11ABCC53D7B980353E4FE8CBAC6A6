@@ -1,0 +1,74 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class mükemmel_sayı : Form
+    {
+        public mükemmel_sayı()
+        {
+            InitializeComponent();
+        }
+
+        class Program
+        {
+            static void Main()
+            {
+                Console.Write("Bir sayı giriniz: ");
+                int sayi = Convert.ToInt32(Console.ReadLine());
+
+                int toplam = 0;
+
+                for (int i = 1; i < sayi; i++)
+                {
+                    if (sayi % i == 0)
+                    {
+                        toplam += i;
+                    }
+                }
+
+                if (toplam == sayi)
+                {
+                    Console.WriteLine(sayi + " mükemmel sayıdır.");
+                }
+                else
+                {
+                    Console.WriteLine(sayi + " mükemmel sayı değildir.");
+                }
+            }
+        }
+class Prograsm
+{
+    static void Masin()
+    {
+        Console.Write("Bir sayı giriniz: ");
+        int sayi = Convert.ToInt32(Console.ReadLine());
+
+        int toplam = 0;
+
+        for (int i = 1; i < sayi; i++)
+        {
+            if (sayi % i == 0)
+            {
+                toplam += i;
+            }
+        }
+
+        if (toplam == sayi)
+        {
+            Console.WriteLine(sayi + " mükemmel sayıdır.");
+        }
+        else
+        {
+            Console.WriteLine(sayi + " mükemmel sayı değildir.");
+        }
+    }
+}
+
+    }
+}

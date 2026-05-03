@@ -1,0 +1,76 @@
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\bin\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.exe
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\bin\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.deps.json
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\bin\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.runtimeconfig.json
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\bin\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.dll
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\bin\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.pdb
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.Form1.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.csproj.GenerateResource.cache
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.AssemblyInfoInputs.cache
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.AssemblyInfo.cs
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.csproj.CoreCompileInputs.cache
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.dll
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\refint\İrem Eylül Yüksel 2510225354.dll
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.pdb
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.genruntimeconfig.cache
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\ref\İrem Eylül Yüksel 2510225354.dll
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.Form2.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.aradaki_asallar.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.asal_sayı.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.faktöryel.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.hesap_makinesi.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.kuvvet_hesaplama.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.piramit.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.sayı_piramidi.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.sayı_tahmini.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.sesli_sessiz.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.toplam.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.çarpım_tablosu.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.üç_nokta_üçgen.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.aranan_sayı.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.büyük_küçük_ortalama.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.mükemmel_sayı.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.not_gösterici.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.sayı_rakamları_toplamı.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.sıralama_büyükten_küçüğe.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.tek_çift.resources
+C:\Users\irem_\source\repos\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.kilo_boy_ortalaması.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\bin\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.exe
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\bin\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.deps.json
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\bin\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.runtimeconfig.json
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\bin\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.dll
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\bin\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.pdb
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.aradaki_asallar.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.aranan_sayı.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.asal_sayı.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.büyük_küçük_ortalama.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.faktöryel.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.Form1.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.Form2.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.hesap_makinesi.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.kilo_boy_ortalaması.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.kuvvet_hesaplama.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.mükemmel_sayı.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.not_gösterici.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.piramit.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.sayı_piramidi.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.sayı_rakamları_toplamı.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.sayı_tahmini.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.sesli_sessiz.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.sıralama_büyükten_küçüğe.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.tek_çift.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.toplam.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.çarpım_tablosu.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.üç_nokta_üçgen.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.csproj.GenerateResource.cache
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.AssemblyInfoInputs.cache
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.AssemblyInfo.cs
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.csproj.CoreCompileInputs.cache
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.dll
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\refint\İrem Eylül Yüksel 2510225354.dll
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.pdb
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem Eylül Yüksel 2510225354.genruntimeconfig.cache
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\ref\İrem Eylül Yüksel 2510225354.dll
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\TekCiftAyirma.Form1.resources
+C:\Users\msı\source\repos\Minigames-main\İrem Eylül Yüksel 2510225354\İrem Eylül Yüksel 2510225354\obj\Debug\net10.0-windows\İrem_Eylül_Yüksel_2510225354.tek_cift.resources

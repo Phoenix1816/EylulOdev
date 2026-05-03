@@ -1,0 +1,66 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class not_gösterici : Form
+    {
+        private readonly List<int> notlar = new List<int>();
+
+        public not_gösterici()
+        {
+            InitializeComponent();
+        }
+
+        // Not ekleme (button1 event handler)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(textBox1.Text, out int not))
+            {
+                notlar.Add(not);
+                textBox1.Clear();
+                textBox1.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Lütfen geçerli bir sayı giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        // Grafik çizme (button2 event handler)
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Refresh();
+            using (Graphics g = pictureBox1.CreateGraphics())
+            using (Pen kalem = new Pen(Color.Black))
+            {
+                Brush firca = Brushes.Blue;
+
+                int genislik = 30;
+                int baslangicX = 20;
+
+                for (int i = 0; i < notlar.Count; i++)
+                {
+                    int yukseklik = notlar[i] * 2; // ölçekleme
+
+                    g.FillRectangle(firca,
+                        baslangicX + i * (genislik + 10),
+                        pictureBox1.Height - yukseklik,
+                        genislik,
+                        yukseklik);
+
+                    g.DrawString(notlar[i].ToString(),
+                        new Font("Arial", 10),
+                        Brushes.Black,
+                        baslangicX + i * (genislik + 10),
+                        pictureBox1.Height - yukseklik - 20);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class faktöryel : Form
+    {
+        public faktöryel()
+        {
+            InitializeComponent();
+            int A;
+            int c = 1;
+
+            Console.WriteLine("Faktöryelini almak istediğiniz sayıyı giriniz.");
+            A = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= A; i++)
+            {
+                c = c * i;
+            }
+
+            Console.WriteLine("Sonuç: " + c);
+
+        }
+    }
+}

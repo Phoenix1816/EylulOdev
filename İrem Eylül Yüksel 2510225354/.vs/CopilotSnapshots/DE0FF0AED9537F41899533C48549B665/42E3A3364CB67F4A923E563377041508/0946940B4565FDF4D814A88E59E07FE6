@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class çarpım_tablosu : Form
+    {
+        public çarpım_tablosu()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            listBox3.Items.Clear();
+            listBox4.Items.Clear();
+            listBox5.Items.Clear();
+            listBox6.Items.Clear();
+            listBox7.Items.Clear();
+            listBox8.Items.Clear();
+            listBox9.Items.Clear();
+
+            for (int i = 1; i <= 9; i++)
+            {
+                for (int j = 1; j <= 9; j++)
+                {
+                    string sonuc = $"{i} x {j} = {i * j}";
+
+                    switch (i)
+                    {
+                        case 1: listBox1.Items.Add(sonuc); break;
+                        case 2: listBox2.Items.Add(sonuc); break;
+                        case 3: listBox3.Items.Add(sonuc); break;
+                        case 4: listBox4.Items.Add(sonuc); break;
+                        case 5: listBox5.Items.Add(sonuc); break;
+                        case 6: listBox6.Items.Add(sonuc); break;
+                        case 7: listBox7.Items.Add(sonuc); break;
+                        case 8: listBox8.Items.Add(sonuc); break;
+                        case 9: listBox9.Items.Add(sonuc); break;
+                    }
+                }
+            }
+        }
+    }
+}

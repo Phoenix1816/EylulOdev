@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Reflection.Emit;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class sesli_sessiz : Form
+    {
+        public sesli_sessiz()
+        {
+            InitializeComponent();
+            
+
+            char[] sesliHarfler = { 'A', 'E', 'I','İ', 'O', 'Ö', 'U', 'Ü',
+                        'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'ü' };
+
+            Console.Write("Bir harf girin: ");
+            char harf = Convert.ToChar(Console.ReadLine());
+
+            bool sesliMi = false;
+
+            for (int i = 0; i < sesliHarfler.Length; i++)
+            {
+                if (sesliHarfler[i] == harf)
+                {
+                    sesliMi = true;
+                    break;
+                }
+            }
+
+            if (sesliMi)
+            {
+                Console.WriteLine(harf + " harfi sesli harftir");
+            }
+            else
+            {
+                Console.WriteLine(harf + " harfi sesli harf değildir");
+            }
+
+        }
+    }
+}

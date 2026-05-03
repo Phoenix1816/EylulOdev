@@ -1,0 +1,104 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class sıralama_büyükten_küçüğe : Form
+    {
+        public sıralama_büyükten_küçüğe()
+        {
+            InitializeComponent();
+        }
+
+        class Program
+        {
+            static void Maisn()
+            {
+                Console.Write("Kaç sayı gireceksiniz: ");
+                int n = Convert.ToInt32(Console.ReadLine());
+
+                int[] dizi = new int[n];
+
+                for (int i = 0; i < n; i++)
+                {
+                    Console.Write((i + 1) + ". sayı: ");
+                    dizi[i] = Convert.ToInt32(Console.ReadLine());
+                }
+
+                MergeSort(dizi, 0, dizi.Length - 1);
+
+                Console.WriteLine("\nSıralı Liste:");
+                foreach (int sayi in dizi)
+                {
+                    Console.WriteLine(sayi);
+                }
+            }
+
+            // MERGE SORT
+            static void MergeSort(int[] dizi, int sol, int sag)
+            {
+                if (sol >= sag)
+                    return;
+
+                int orta = (sol + sag) / 2;
+
+                MergeSort(dizi, sol, orta);
+                MergeSort(dizi, orta + 1, sag);
+
+                Merge(dizi, sol, orta, sag);
+            }
+
+            static void Merge(int[] dizi, int sol, int orta, int sag)
+            {
+                int n1 = orta - sol + 1;
+                int n2 = sag - orta;
+
+                int[] L = new int[n1];
+                int[] R = new int[n2];
+
+                for (int i = 0; i < n1; i++)
+                    L[i] = dizi[sol + i];
+
+                for (int j = 0; j < n2; j++)
+                    R[j] = dizi[orta + 1 + j];
+
+                int x = 0, y = 0, k = sol;
+
+                while (x < n1 && y < n2)
+                {
+                    if (L[x] <= R[y])
+                    {
+                        dizi[k] = L[x];
+                        x++;
+                    }
+                    else
+                    {
+                        dizi[k] = R[y];
+                        y++;
+                    }
+                    k++;
+                }
+
+                while (x < n1)
+                {
+                    dizi[k] = L[x];
+                    x++;
+                    k++;
+                }
+
+                while (y < n2)
+                {
+                    dizi[k] = R[y];
+                    y++;
+                    k++;
+                }
+            }
+        }
+
+    }
+}

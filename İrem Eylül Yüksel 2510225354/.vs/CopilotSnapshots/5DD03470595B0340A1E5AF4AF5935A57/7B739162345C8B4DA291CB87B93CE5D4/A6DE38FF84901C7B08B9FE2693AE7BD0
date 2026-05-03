@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class sayı_piramidi : Form
+    {
+        public sayı_piramidi()
+        {
+            InitializeComponent();
+        }
+
+        // Piramit çizimini bir butonun Click olayında yapıyoruz
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            int limit;
+            if (!int.TryParse(textBox1.Text, out limit) || limit < 1)
+            {
+                MessageBox.Show("Geçerli bir sayı giriniz!");
+                return;
+            }
+
+            int sayi = 1;
+            for (int i = 1; sayi <= limit; i++)
+            {
+                string satir = "";
+                for (int j = 1; j <= i; j++)
+                {
+                    if (sayi > limit)
+                        break;
+                    satir += sayi + " ";
+                    sayi++;
+                }
+                listBox1.Items.Add(satir.TrimEnd());
+            }
+        }
+    }
+}

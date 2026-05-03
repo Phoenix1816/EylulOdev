@@ -1,0 +1,159 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class hesap_makinesi : Form
+    {
+        public hesap_makinesi()
+        {
+            InitializeComponent();
+        }
+            class Program
+        {
+            static void Ma()
+            {
+                HesapMakinesi h = new HesapMakinesi();
+
+                while (true)
+                {
+                    Console.WriteLine("\n--- GELİŞMİŞ HESAP MAKİNESİ ---");
+                    Console.WriteLine("1- Toplama");
+                    Console.WriteLine("2- Çıkarma");
+                    Console.WriteLine("3- Çarpma");
+                    Console.WriteLine("4- Bölme");
+                    Console.WriteLine("5- Karekök");
+                    Console.WriteLine("6- Üs alma");
+                    Console.WriteLine("7- Mutlak değer");
+                    Console.WriteLine("8- Sin");
+                    Console.WriteLine("9- Cos");
+                    Console.WriteLine("10- Tan");
+                    Console.WriteLine("11- Log10");
+                    Console.WriteLine("12- Faktöriyel");
+                    Console.WriteLine("0- Çıkış");
+
+                    Console.Write("Seçim: ");
+                    int secim = Convert.ToInt32(Console.ReadLine());
+
+                    if (secim == 0)
+                        break;
+
+                    double a, b;
+
+                    switch (secim)
+                    {
+                        case 1:
+                            Console.Write("A: "); a = Convert.ToDouble(Console.ReadLine());
+                            Console.Write("B: "); b = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine(h.Topla(a, b));
+                            break;
+
+                        case 2:
+                            Console.Write("A: "); a = Convert.ToDouble(Console.ReadLine());
+                            Console.Write("B: "); b = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine(h.Cikar(a, b));
+                            break;
+
+                        case 3:
+                            Console.Write("A: "); a = Convert.ToDouble(Console.ReadLine());
+                            Console.Write("B: "); b = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine(h.Carp(a, b));
+                            break;
+
+                        case 4:
+                            Console.Write("A: "); a = Convert.ToDouble(Console.ReadLine());
+                            Console.Write("B: "); b = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine(h.Bol(a, b));
+                            break;
+
+                        case 5:
+                            Console.Write("Sayı: ");
+                            a = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine(h.Karekok(a));
+                            break;
+
+                        case 6:
+                            Console.Write("Taban: "); a = Convert.ToDouble(Console.ReadLine());
+                            Console.Write("Üs: "); b = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine(h.Ust(a, b));
+                            break;
+
+                        case 7:
+                            Console.Write("Sayı: ");
+                            a = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine(h.Mutlak(a));
+                            break;
+
+                        case 8:
+                            Console.Write("Açı: ");
+                            a = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine(h.Sin(a));
+                            break;
+
+                        case 9:
+                            Console.Write("Açı: ");
+                            a = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine(h.Cos(a));
+                            break;
+
+                        case 10:
+                            Console.Write("Açı: ");
+                            a = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine(h.Tan(a));
+                            break;
+
+                        case 11:
+                            Console.Write("Sayı: ");
+                            a = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine(h.Log10(a));
+                            break;
+
+                        case 12:
+                            Console.Write("Sayı: ");
+                            int n = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine(h.Faktoriyel(n));
+                            break;
+
+                        default:
+                            Console.WriteLine("Geçersiz seçim!");
+                            break;
+                    }
+                }
+            }
+        }
+
+        class HesapMakinesi
+        {
+            // 4 işlem
+            public double Topla(double a, double b) => a + b;
+            public double Cikar(double a, double b) => a - b;
+            public double Carp(double a, double b) => a * b;
+            public double Bol(double a, double b) => a / b;
+
+            // ekstra fonksiyonlar
+            public double Karekok(double a) => Math.Sqrt(a);
+            public double Ust(double a, double b) => Math.Pow(a, b);
+            public double Mutlak(double a) => Math.Abs(a);
+            public double Sin(double a) => Math.Sin(a);
+            public double Cos(double a) => Math.Cos(a);
+            public double Tan(double a) => Math.Tan(a);
+            public double Log10(double a) => Math.Log10(a);
+
+            public long Faktoriyel(int n)
+            {
+                long sonuc = 1;
+                for (int i = 1; i <= n; i++)
+                    sonuc *= i;
+
+                return sonuc;
+            }
+        }
+
+    }
+}
+

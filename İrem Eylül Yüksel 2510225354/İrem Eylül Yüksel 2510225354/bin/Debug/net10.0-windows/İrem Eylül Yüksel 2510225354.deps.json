@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "İrem Eylül Yüksel 2510225354/1.0.0": {
+        "runtime": {
+          "İrem Eylül Yüksel 2510225354.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "İrem Eylül Yüksel 2510225354/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

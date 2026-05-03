@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class sayı_piramidi : Form
+    {
+        public sayı_piramidi()
+        {
+            InitializeComponent();
+        }
+            class Program
+        {
+            static void piramit()
+            {
+                Console.Write("Son sayıyı giriniz: ");
+                int limit = Convert.ToInt32(Console.ReadLine());
+
+                int sayi = 1;
+
+                for (int i = 1; sayi <= limit; i++)
+                {
+                    for (int j = 1; j <= i; j++)
+                    {
+                        if (sayi > limit)
+                            break;
+
+                        Console.Write(sayi + " ");
+                        sayi++;
+                    }
+
+                    Console.WriteLine();
+                }
+            }
+        }
+
+        
+
+        private void sayı_piramidi_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

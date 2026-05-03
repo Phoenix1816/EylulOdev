@@ -1,0 +1,112 @@
+﻿using System;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class aradaki_asallar : Form
+    {
+        TextBox txtA;
+        TextBox txtB;
+        Button btnHesapla;
+        ListBox listBox1;
+        Label lblA, lblB;
+
+        public aradaki_asallar()
+        {
+            InitializeComponent();
+            FormuHazirla();
+        }
+
+        private void FormuHazirla()
+        {
+            this.Text = "Aradaki Asal Sayılar";
+            this.Width = 400;
+            this.Height = 400;
+
+            // Label A
+            lblA = new Label();
+            lblA.Text = "A:";
+            lblA.Top = 20;
+            lblA.Left = 20;
+            this.Controls.Add(lblA);
+
+            // TextBox A
+            txtA = new TextBox();
+            txtA.Top = 20;
+            txtA.Left = 60;
+            this.Controls.Add(txtA);
+            txtA.ForeColor = System.Drawing.Color.Black;
+
+            // Label B
+            lblB = new Label();
+            lblB.Text = "B:";
+            lblB.Top = 60;
+            lblB.Left = 20;
+            this.Controls.Add(lblB);
+
+            // TextBox B
+            txtB = new TextBox();
+            txtB.Top = 60;
+            txtB.Left = 60;
+            this.Controls.Add(txtB);
+            txtB.ForeColor = System.Drawing.Color.Black;
+
+            // Button
+            btnHesapla = new Button();
+            btnHesapla.Text = "Hesapla";
+            btnHesapla.Top = 100;
+            btnHesapla.Left = 60;
+            btnHesapla.Click += new EventHandler(btnHesapla_Click);
+            this.Controls.Add(btnHesapla);
+
+            // ListBox
+            listBox1 = new ListBox();
+            listBox1.Top = 150;
+            listBox1.Left = 20;
+            listBox1.Width = 200;
+            listBox1.Height = 150;
+            this.Controls.Add(listBox1);
+        }
+
+        private void btnHesapla_Click(object sender, EventArgs e)
+        {
+            int A, B;
+
+            if (!int.TryParse(txtA.Text, out A) || !int.TryParse(txtB.Text, out B))
+            {
+                MessageBox.Show("Geçerli sayı gir!");
+                return;
+            }
+
+            if (A > B)
+            {
+                MessageBox.Show("A, B'den büyük olamaz!");
+                return;
+            }
+
+            listBox1.Items.Clear();
+
+            for (int i = A; i <= B; i++)
+            {
+                if (i < 2)
+                    continue;
+
+                bool asalMi = true;
+
+                for (int j = 2; j <= Math.Sqrt(i); j++)
+                {
+                    if (i % j == 0)
+                    {
+                        asalMi = false;
+                        break;
+                    }
+                }
+
+                if (asalMi)
+                {
+                    listBox1.Items.Add(i);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class asal_sayı : Form
+    {
+        public asal_sayı()
+        {
+            InitializeComponent();
+            int sayi;
+            int c = 0;
+
+            Console.WriteLine("Bir sayı giriniz:");
+            sayi = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= sayi; i++)
+            {
+                if (sayi % i == 0)
+                {
+                    c++;
+                }
+            }
+
+            if (c == 2)
+            {
+                Console.WriteLine(sayi + "sayısı asal sayıdır.");
+            }
+            else
+            {
+                Console.WriteLine(sayi + " " + " sayısı asal sayı değildir.");
+            }
+
+        }
+    }
+}

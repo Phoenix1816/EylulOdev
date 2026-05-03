@@ -1,0 +1,74 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class not_gösterici : Form
+    {
+        public not_gösterici()
+        {
+            InitializeComponent();
+        }
+        namespace NotGrafik
+    {
+        public partial class Form1 : Form
+        {
+            List<int> notlar = new List<int>();
+
+            public Form1()
+            {
+                InitializeComponent();
+            }
+
+            // Not ekleme
+            private void button1_Click(object sender, EventArgs e)
+            {
+                int not = Convert.ToInt32(textBox1.Text);
+                notlar.Add(not);
+
+                textBox1.Clear();
+                textBox1.Focus();
+            }
+
+            // Grafik çizme
+            private void button2_Click(object sender, EventArgs e)
+            {
+                pictureBox1.Refresh();
+                Graphics g = pictureBox1.CreateGraphics();
+
+                Pen kalem = new Pen(Color.Black);
+                Brush firca = Brushes.Blue;
+
+                int genislik = 30;
+                int baslangicX = 20;
+
+                for (int i = 0; i < notlar.Count; i++)
+                {
+                    int yukseklik = notlar[i] * 2; // ölçekleme
+
+                    // dikdörtgen (bar)
+                    g.FillRectangle(firca,
+                        baslangicX + i * (genislik + 10),
+                        pictureBox1.Height - yukseklik,
+                        genislik,
+                        yukseklik);
+
+                    // not yazısı
+                    g.DrawString(notlar[i].ToString(),
+                        new Font("Arial", 10),
+                        Brushes.Black,
+                        baslangicX + i * (genislik + 10),
+                        pictureBox1.Height - yukseklik - 20);
+                }
+            }
+        }
+    }
+
+}
+}

@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class kuvvet_hesaplama : Form
+    {
+        public kuvvet_hesaplama()
+        {
+            InitializeComponent();
+            class Program
+        {
+            static void Main()
+            {
+                Console.Write("Taban sayıyı giriniz: ");
+                long taban = Convert.ToInt64(Console.ReadLine());
+
+                Console.Write("Üs değerini giriniz: ");
+                long us = Convert.ToInt64(Console.ReadLine());
+
+                Hesap hesap = new Hesap();
+                long sonuc = hesap.UstAl(taban, us);
+
+                Console.WriteLine("Sonuç: " + sonuc);
+            }
+        }
+
+        class Hesap
+        {
+            public long UstAl(long taban, long us)
+            {
+                long sonuc = 1;
+
+                while (us > 0)
+                {
+                    // üs tekse sonucu çarp
+                    if (us % 2 == 1)
+                    {
+                        sonuc *= taban;
+                    }
+
+                    // tabanı kare yap
+                    taban *= taban;
+
+                    // üsü yarıya indir
+                    us /= 2;
+                }
+
+                return sonuc;
+            }
+        }
+
+    }
+}
+}

@@ -1,0 +1,90 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace İrem_Eylül_Yüksel_2510225354
+{
+    public partial class sayı_piramidi : Form
+    {
+        private TextBox textBox1;
+        private Button button1;
+        private ListBox listBox1;
+        private Label lblSayi;
+
+        public sayı_piramidi()
+        {
+            InitializeComponent();
+            KontrolleriOlustur();
+        }
+
+        private void KontrolleriOlustur()
+        {
+            // Label
+            lblSayi = new Label();
+            lblSayi.Text = "Son Sayı:";
+            lblSayi.Top = 20;
+            lblSayi.Left = 20;
+            this.Controls.Add(lblSayi);
+
+            // TextBox
+            textBox1 = new TextBox();
+            textBox1.Top = 20;
+            textBox1.Left = 100;
+            textBox1.Width = 80;
+            textBox1.ForeColor = System.Drawing.Color.Black;
+            textBox1.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(textBox1);
+
+            // Button
+            button1 = new Button();
+            button1.Text = "Piramit Oluştur";
+            button1.Top = 60;
+            button1.Left = 100;
+            button1.Click += new EventHandler(button1_Click);
+            this.Controls.Add(button1);
+
+            // ListBox
+            listBox1 = new ListBox();
+            listBox1.Top = 100;
+            listBox1.Left = 20;
+            listBox1.Width = 200;
+            listBox1.Height = 250;
+            this.Controls.Add(listBox1);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            int limit;
+            if (!int.TryParse(textBox1.Text, out limit) || limit < 1)
+            {
+                MessageBox.Show("Geçerli bir sayı giriniz!");
+                return;
+            }
+
+            int sayi = 1;
+            for (int i = 1; sayi <= limit; i++)
+            {
+                string satir = "";
+                for (int j = 1; j <= i; j++)
+                {
+                    if (sayi > limit)
+                        break;
+                    satir += sayi + " ";
+                    sayi++;
+                }
+                listBox1.Items.Add(satir.TrimEnd());
+            }
+        }
+
+    private void sayı_piramidi_Load(object sender, EventArgs e)
+    {
+        // Form yüklendiğinde çalışacak kodlar buraya yazılabilir.
+    }
+        }
+    }
+
